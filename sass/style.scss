@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 // VARIABLES
@@ -326,36 +325,101 @@ b, strong {
 }
 
 .dark-mode {
-	background: $dark-mode-color;
-	.navbar-light .navbar-nav .nav-link {
-		color: rgba(255,255,255,0.8);
-		&:hover {
-			color: $main-color;
-		}
-	}
-	.navbar {
-		&[class*="headroom--not-top"] {
-			background: $dark-mode-color;
-			border-bottom: 1px solid #1f1f1f;
-	    }
-	}
-	.small-text {
-		background: #0d0c15;
-		color: $text-white;
-	}
-	.feature-card .uil,
-	.navbar-light .navbar-brand,
-	h1, h2, h3, h4, h5, h6,
-	.color-mode {
-		color: $text-white;
-	}
-	.owl-carousel {
-		.owl-nav button.owl-next,
-		.owl-nav button.owl-prev,
-		button.owl-dot {
-			color: $text-white;
-		}
-	}
+    background: $dark-mode-color;
+    color: $text-white;
+
+    .navbar {
+        background-color: $dark-mode-color;
+        border-bottom: 1px solid #1f1f1f;
+    }
+
+    .navbar-toggler {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        background-color: $text-white;
+    }
+
+    .navbar-collapse {
+        background-color: $dark-mode-color;
+        border: none;
+    }
+
+    .nav-link {
+        color: $text-white !important;
+        &:hover {
+            color: $main-color !important;
+        }
+    }
+
+    .navbar-brand {
+        color: $text-white;
+    }
+
+    .color-mode-icon {
+        color: $text-white;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    .navbar[class*="headroom--not-top"] {
+        background: $dark-mode-color;
+        border-bottom: 1px solid #1f1f1f;
+    }
+
+    .small-text {
+        background: #0d0c15;
+        color: $text-white;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .color-mode {
+        color: $text-white;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        color: $text-white;
+    }
+
+    p {
+        color: #ebedef;
+    }
+
+    .timeline-yr {
+        background: #1f1f1f;
+    }
+
+    .timeline-info small {
+        color: #ffffff;
+    }
+
+    .skill-card {
+        background: #1f1f1f;
+        color: #ebedef;
+    }
+
+    .skill-card h3, .skill-card li {
+        color: #ebedef;
+    }
+
+    .skill-card li i {
+        color: #ebedef;
+    }
+
+        
+    .nav-item{
+    background-color: $dark-mode-color;
+    }
+    
 }
 
 

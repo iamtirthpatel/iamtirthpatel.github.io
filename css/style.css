@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 body {
   font-family: "Space Grotesk", serif;
-  padding-top: 40px;
+  padding-top: 30px;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -9,7 +9,7 @@ body {
 
 
 .full-screen {
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .small-text {
@@ -33,20 +33,33 @@ a {
   font-weight: normal;
   text-decoration: none !important;
   transition: all 0.4s ease;
+  
 }
 a:hover {
   color: #ffc200 !important;
 }
 
+.ab{
+  color: #5b5b5b;
+}
+.dark-mode .ab{
+  color: #e5e7eb;
+}
+
+
+
 .navbar-brand .uil {
   font-size: 40px;
 }
+
 
 p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.5;
   color: #5b5b5b;
+  
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,8 +89,8 @@ b, strong {
 }
 
 .custom-btn {
-  background: #eee;
-  color: #5b5b5b;
+  background: #e5e7eb;
+  color: #1f1f1f;
   font-weight: bold;
   border-radius: 50px;
   padding: 13px 29px;
@@ -90,7 +103,7 @@ b, strong {
   color: #ffc200;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #1f1f1f;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -115,7 +128,7 @@ b, strong {
 }
 
 .animated-item {
-  font-size: 38px;
+  font-size: 40px;
   line-height: inherit;
   display: block;
   opacity: 0;
@@ -176,8 +189,8 @@ b, strong {
   transform: translate(0, 0);
 }
 .navbar[class*="headroom--not-top"] {
-  background: #ffffff;
-  border-bottom: 1px solid #f0f0f0;
+  background: #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -281,7 +294,7 @@ b, strong {
   font-family: 'unicons';
   content: '\eb65';
   font-size: 30px;
-  color: #ffffff;
+  color: #e5e7eb;
 }
 
 .dark-mode {
@@ -299,22 +312,22 @@ b, strong {
 }
 .dark-mode .small-text {
   background: #0d0c15;
-  color: #ffffff;
+  color: #e5e7eb;
 }
 .dark-mode .feature-card .uil,
 .dark-mode .navbar-light .navbar-brand,
 .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
 .dark-mode .color-mode {
-  color: #ffffff;
+  color: #e5e7eb;
 }
 .dark-mode .owl-carousel .owl-nav button.owl-next,
 .dark-mode .owl-carousel .owl-nav button.owl-prev,
 .dark-mode .owl-carousel button.owl-dot {
-  color: #ffffff;
+  color: #e5e7eb;
 }
 
-.dark-mode p {
-  color: #ebedef;
+.dark-mode p{
+  color: #e5e7eb;
 }
 
 
@@ -494,12 +507,17 @@ b, strong {
   color: #333;
   transition: transform 0.3s ease, color 0.3s ease;
   text-decoration: none;
+
+}
+.dark-mode .social-icon {
+  color: #e5e7eb;
 }
 
 .social-icon:hover {
   color: #ffc200;
   transform: scale(1.1);
 }
+
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
@@ -539,38 +557,44 @@ b, strong {
   }
 
   .animated-item {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 38px;
+    margin-bottom: 5px;
   }
 
-  .navbar-collapse {
+  .navbar-collapse  {
     background: #ffffff;
     text-align: center;
     padding-bottom: 20px;
   }
-
+  .dark-mode .navbar-collapse {
+    background: #0c0c0d;
+  }
   .navbar-expand-sm .navbar-nav .nav-link {
     padding: 3px 20px;
   }
+
 }
 @media (max-width: 580px) {
 	.animated-info {
-		min-width: 200px;
+		min-width: 230px;
 	}
   .animated-item {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-bottom: 5px;
   }
   
   .custom-btn-group {
     text-align: center;
   }
 
+  
+
 
   .custom-btn {
     display: block;
     margin: 10px 0;
   }
+
 
   .owl-theme .owl-nav {
     display: none;
@@ -699,4 +723,117 @@ b, strong {
         transform: scale(1.05);
     }
 }
+
+
+
+
+
+
+.dark-mode .navbar-toggler-icon{
+  background-color: #f0f0f0;
+}
+
+.spotify-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotify-track, .spotify-playlists {
+    margin-bottom: 20px;
+}
+
+.spotify-track img, .spotify-playlists img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.spotify-track span, .spotify-playlists span {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    color: #333;
+}
+
+
+
+
+.dark-mode .spotify-track span, .dark-mode .spotify-playlists span {
+  color: #ebedef;
+}
+
+.spotify-playlists div, .spotify-track div {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.spotify-playlists div:hover {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+
+
+
+.intro-text {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.pinterest-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pinterest-boards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pinterest-board {
+    width: 200px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pinterest-board:hover {
+    transform: translateY(-5px);
+}
+
+.pinterest-board img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.pinterest-board span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
 
